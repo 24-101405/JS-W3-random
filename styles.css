@@ -151,16 +151,16 @@ animation: fadeUp 1.4s ease 0.2s both;
 }
 
 .location {
-font-family: "Cormorant Garamond", serif;
+font-family: "Cormorant Garamond";
 font-size: 19px;
-
+font-weight: 400px;
 letter-spacing: 5px;
 text-transform: uppercase;
 
 color: #f0e9db;
 
 margin-bottom: 30px;
-
+text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 animation: fadeUp 1.4s ease 0.5s both;
 }
 
