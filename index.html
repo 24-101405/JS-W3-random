@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nostalgia</title>
+        <link href="styles.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <main class="landing-page">
+            <div id="background" class="background"></div>
+            <div class="overlay"></div>
+            <div class="film-grain"></div>
+
+        <header class="header">
+
+<div class="brand">
+THE UNLIVED LIFE
+</div>
+
+<div class="header-right">
+<span class="header-line"></span>
+<span>ANOTHER TIME. ANOTHER LIFE.</span>
+</div>
+
+</header>
+
+
+<section class="memory-content">
+
+<p class="eyebrow">
+A MEMORY FROM ANOTHER LIFE
+</p>
+
+<p id="location" class="location"></p>
+
+<h1 id="quote" class="quote"></h1>
+
+<div class="quote-divider"></div>
+
+<p class="subtitle">
+Memories from places you've never been.
+</p>
+
+</section>
+
+<footer class="footer">
+
+<div class="footer-left">
+<span class="small-circle"></span>
+<span>AN UNWRITTEN STORY</span>
+</div>
+
+<div class="footer-center">
+<span class="footer-line"></span>
+<span>EVERY LIFE LEAVES AN ECHO</span>
+<span class="footer-line"></span>
+</div>
+
+<div class="footer-right">
+<span>REFRESH TO REMEMBER AGAIN</span>
+<span class="refresh-symbol">↻</span>
+</div>
+
+</footer>
+        </main>
+
+
+
+<script>
+
+let backgrounds = [
+"images/italy.jpg",
+"images/paris.jpg",
+"images/tokyo.jpg",
+"images/switzerland.jpg",
+"images/iceland.jpg",
+"images/california.jpg"
+];
+
+let quotes = [
+"Maybe in another life, we watched this sunset together.",
+"Somewhere in another life, we met in this city.",
+"Maybe in another life, I stayed a little longer.",
+"In another life, I took the longer route.",
+"In another life, this was home.",
+"Maybe in another life, we never left."
+];
+
+let locations = [
+"POSITANO, ITALY · 1998",
+"PARIS, FRANCE · 2004",
+"TOKYO, JAPAN · 2019",
+"SWISS ALPS · 2012",
+"REYKJAVIK, ICELAND · 2007",
+"BIG SUR, CALIFORNIA · 1996"
+];
+
+let randomIndex = Math.floor(Math.random() * backgrounds.length);
+
+document.getElementById("background").style.backgroundImage =
+"url('" + backgrounds[randomIndex] + "')";
+
+document.getElementById("quote").textContent =
+quotes[randomIndex];
+
+document.getElementById("location").textContent =
+locations[randomIndex];
+
+
+</script>
+    </body>
+</html>
+
